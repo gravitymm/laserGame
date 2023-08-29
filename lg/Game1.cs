@@ -17,7 +17,7 @@ namespace lg
         public static Game1 Instance { get; private set; }
 
         private Level1 levels = new Level1();
-        private int levelIndex = 5;
+        private int levelIndex = 0;
         private Level level => levels.levels[levelIndex];
 
         private List<Laser> lasers = new();

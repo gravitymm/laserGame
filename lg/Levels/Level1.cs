@@ -33,8 +33,8 @@ namespace lg.Levels
                 },
                 switches = new()
                 {
-                    new() {rectangle = new Rectangle(580, 240, 20, 40)}
-                    //new() {rectangle = new Rectangle(0, 0, 0, 0)}
+                    //new() {rectangle = new Rectangle(580, 240, 20, 40)}
+                    new() {rectangle = new Rectangle(0, 0, 0, 0)}
                 }
             });
             
@@ -105,6 +105,58 @@ namespace lg.Levels
             
             levels.Add(new()
             {
+                laserGun = new() { rectangle = new Rectangle(740, 230, 60, 20) },
+                reciver = new() { rectangle = new Rectangle(0, 230, 60, 20) },
+                reflectors = new()
+                {
+                    new() { rectangle = new Rectangle(300, 110, 30, 30), route = random.Next(0, 4) },
+                    new() { rectangle = new Rectangle(500, 110, 30, 30), route = random.Next(0, 4) },
+                    new() { rectangle = new Rectangle(300, 240, 30, 30), route = random.Next(0, 4) },
+                    new() { rectangle = new Rectangle(500, 240, 30, 30), route = random.Next(0, 4) },
+                    new() { rectangle = new Rectangle(300, 370, 30, 30), route = random.Next(0, 4) },
+                    new() { rectangle = new Rectangle(500, 370, 30, 30), route = random.Next(0, 4) }
+                },
+                walls = new()
+                {
+                    new() { rectangle = new Rectangle(350, 150, 100, 190) }
+                },
+                switches = new()
+                {
+                    new() {rectangle = new Rectangle(0, 0, 0, 0)}
+                }
+            });
+            
+            levels.Add(new()
+            {
+                laserGun = new() { rectangle = new Rectangle(740, 230, 60, 20) },
+                reciver = new() { rectangle = new Rectangle(0, 230, 60, 20) },
+                reflectors = new()
+                {
+                    new() { rectangle = new Rectangle(450, 240, 30, 30), route = random.Next(0, 4) },
+                    new() { rectangle = new Rectangle(450, 80, 30, 30), route = random.Next(0, 4) },
+                    new() { rectangle = new Rectangle(170, 80, 30, 30), route = random.Next(0, 4) },
+                    new() { rectangle = new Rectangle(130, 240, 30, 30), route = random.Next(0, 4) },
+                    new() { rectangle = new Rectangle(130, 400, 30, 30), route = random.Next(0, 4) },
+                    new() { rectangle = new Rectangle(400, 400, 30, 30), route = random.Next(0, 4) },
+                    new() { rectangle = new Rectangle(400, 40, 30, 30), route = random.Next(0, 4) },
+                    new() { rectangle = new Rectangle(170, 440, 30, 30), route = random.Next(0, 4) },
+                    new() { rectangle = new Rectangle(600, 440, 30, 30), route = random.Next(0, 4) },
+                    new() { rectangle = new Rectangle(600, 40, 30, 30), route = random.Next(0, 4) }
+                },
+                walls = new()
+                {
+                    new() { rectangle = new Rectangle(300, 100, 10, 270) },
+                    new() { rectangle = new Rectangle(500, 50, 10, 150) },
+                    new() { rectangle = new Rectangle(200, 200, 170, 10) }
+                },
+                switches = new()
+                {
+                    new() {rectangle = new Rectangle(0, 0, 0, 0)}
+                }
+            });
+
+            levels.Add(new()
+            {
                 laserGun = new() { rectangle = new Rectangle(740, 100, 60, 20) },
                 reciver = new() { rectangle = new Rectangle(0, 70, 60, 20) },
                 reflectors = new()
@@ -123,73 +175,6 @@ namespace lg.Levels
                 walls = new()
                 {
                     new() { rectangle = new Rectangle(0, 0, 0, 0) }
-                },
-                switches = new()
-                {
-                    new() {rectangle = new Rectangle(0, 0, 0, 0)}
-                }
-            });
-            
-            levels.Add(new()
-            {
-                laserGun = new() { rectangle = new Rectangle(740, 230, 60, 20) },
-                reciver = new() { rectangle = new Rectangle(0, 230, 60, 20) },
-                reflectors = new()
-                {
-                    new() { rectangle = new Rectangle(400, 150, 30, 30), route = random.Next(0, 4) },
-                    new() { rectangle = new Rectangle(600, 300, 30, 30), route = random.Next(0, 4) }
-                },
-                walls = new()
-                {
-                    new() { rectangle = new Rectangle(300, 100, 0, 300) },
-                    new() { rectangle = new Rectangle(500, 50, 0, 150) },
-                    new() { rectangle = new Rectangle(200, 200, 200, 0) }
-                },
-                switches = new()
-                {
-                    new() {rectangle = new Rectangle(0, 0, 0, 0)}
-                }
-            });
-            
-            levels.Add(new()
-            {
-                laserGun = new() { rectangle = new Rectangle(740, 230, 60, 20) },
-                reciver = new() { rectangle = new Rectangle(0, 230, 60, 20) },
-                reflectors = new()
-                {
-                    new() { rectangle = new Rectangle(300, 110, 30, 30), route = random.Next(0, 4) },
-                    new() { rectangle = new Rectangle(500, 110, 30, 30), route = random.Next(0, 4) },
-                    new() { rectangle = new Rectangle(300, 240, 30, 30), route = random.Next(0, 4) },
-                    new() { rectangle = new Rectangle(500, 240, 30, 30), route = random.Next(0, 4) },
-                    new() { rectangle = new Rectangle(300, 370, 30, 30), route = random.Next(0, 4) },
-                    new() { rectangle = new Rectangle(500, 370, 30, 30), route = random.Next(0, 4) }
-                },
-                walls = new()
-                {
-                    new() { rectangle = new Rectangle(350, 150, 100, 190) }
-                },
-                switches = new()
-                {
-                    new() {rectangle = new Rectangle(0, 0, 0, 0)}
-                }
-            });
-            
-            levels.Add(new()
-            {
-                laserGun = new() { rectangle = new Rectangle(740, 230, 60, 20) },
-                reciver = new() { rectangle = new Rectangle(0, 150, 60, 20) },
-                reflectors = new()
-                {
-                    new() { rectangle = new Rectangle(300, 110, 30, 30), route = random.Next(0, 4) },
-                    new() { rectangle = new Rectangle(500, 110, 30, 30), route = random.Next(0, 4) },
-                    new() { rectangle = new Rectangle(300, 240, 30, 30), route = random.Next(0, 4) },
-                    new() { rectangle = new Rectangle(500, 240, 30, 30), route = random.Next(0, 4) },
-                    new() { rectangle = new Rectangle(300, 370, 30, 30), route = random.Next(0, 4) },
-                    new() { rectangle = new Rectangle(500, 370, 30, 30), route = random.Next(0, 4) }
-                },
-                walls = new()
-                {
-                    new() { rectangle = new Rectangle(350, 150, 100, 190) }
                 },
                 switches = new()
                 {
